@@ -82,6 +82,7 @@ All datasets were standardized to **32 × 32 grayscale images** before training:
 
 ### CNN Architecture (Baseline)
 
+
 The baseline CNN processes 32 × 32 grayscale images through three feature extraction blocks:
 
 ```
@@ -118,7 +119,7 @@ Classifier: Flatten → Linear(2048→512) → ReLU → Dropout(0.5) → Linear(
 ## Federated Learning
 
 Each dataset is treated as an **independent client**. Clients train local models on private data and share only model parameters with a central aggregation server (FedAvg), preserving data privacy.
-
+<img width="921" height="425" alt="image" src="https://github.com/user-attachments/assets/6446ce83-a96e-4cac-84de-a8248fd32e3e" />
 ```
 Client 1 (AHCD)   ──┐
                      ├──► Aggregation Server ──► Global Model
@@ -136,7 +137,7 @@ Client 3 (OIHACDB)──┘
 ### Experiment 2 — Missing Classes (each letter exists at only one client)
 
 Class distribution across clients:
-
+<img width="1042" height="173" alt="image" src="https://github.com/user-attachments/assets/f5f50331-fc43-4c10-8227-9222daa5b391" />
 | Client | Dataset | Letters |
 |---|---|---|
 | Client 1 | OIHACDB | AiinI, AlifI, BaaI, CaafI, DadI, DalI, DhaI, DhelI, FaaI, GhiinI |
@@ -162,7 +163,7 @@ OIHACDB (most affected client) was augmented with samples of missing letters fro
 | Centralized (Baseline CNN) | 1,157,085 | ~2.8 min | **96.50%** |
 | Federated — Full Classes | 1,157,085 | ~11.9 min | 91.50% |
 | Federated — Missing Classes | 1,157,085 | ~5.3 min | 84.98% |
-
+<img width="1034" height="150" alt="image" src="https://github.com/user-attachments/assets/259319c2-a777-4fb6-8862-b38914a75c0d" />
 **Key takeaways:**
 
 - Centralized learning achieves the highest accuracy due to full data access.
@@ -194,3 +195,5 @@ All experiments were conducted on the following machine:
 5. Y. LeCun et al. — *Gradient-based Learning Applied to Document Recognition*, IEEE 1998.
 6. H. B. McMahan et al. — *Communication-Efficient Learning of Deep Networks from Decentralized Data (FedAvg)*, AISTATS 2017.
 7. K. He et al. — *Deep Residual Learning for Image Recognition*, CVPR 2016.
+8. A. El-Sawy, M. Loey, and H. EL-Bakry, “Arabic handwritten characters recognition using convolutional neural network,” WSEAS Transactions on Computer Research, vol. 5, pp. 11–19, 2017.
+9. Balaha, H.M., Ali, H.A., Saraya, M. et al. A new Arabic handwritten character recognition deep learning system (AHCR-DLS). Neural Comput & Applic 33, 6325–6367 (2021). https://doi.org/10.1007/s00521-020-05397-2
