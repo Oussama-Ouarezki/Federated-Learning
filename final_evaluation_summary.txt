@@ -1,0 +1,66 @@
+================================================================================
+FEDERATED LEARNING - FINAL EVALUATION SUMMARY
+================================================================================
+
+Overall Accuracy: 64.04%
+Total Classes: 28
+Total Samples: 19089
+
+================================================================================
+PER-CLIENT PERFORMANCE
+================================================================================
+
+AHCD:
+  Samples: 5400
+  Classes: 9
+  Accuracy: 21.00%
+  Letters: SadI, ShiinI, SiinI, TaaI, ThaI, ThaaI, WawI, YaaI, ZadI
+
+HMBD:
+  Samples: 5619
+  Classes: 9
+  Accuracy: 54.85%
+  Letters: HaI, HaaI, JiimI, KafI, KhaaI, LamI, MiimI, NounI, RaaI
+
+OIHCBD:
+  Samples: 8070
+  Classes: 10
+  Accuracy: 99.24%
+  Letters: AiinI, AlifI, BaaI, CaafI, DadI, DalI, DhaI, DhelI, FaaI, GhiinI
+
+================================================================================
+PER-LETTER DETAILED RESULTS
+================================================================================
+
+Letter          Client       Accuracy     Correct/Total  
+--------------------------------------------------------------------------------
+SadI            AHCD           4.17%        25/600       
+ShiinI          AHCD          59.83%       359/600       
+SiinI           AHCD          39.50%       237/600       
+TaaI            AHCD           4.33%        26/600       
+ThaI            AHCD          13.00%        78/600       
+ThaaI           AHCD          32.33%       194/600       
+WawI            AHCD          27.67%       166/600       
+YaaI            AHCD           4.83%        29/600       
+ZadI            AHCD           3.33%        20/600       
+HaI             HMBD          51.28%       240/468       
+HaaI            HMBD           1.68%         8/477       
+JiimI           HMBD          81.14%       383/472       
+KafI            HMBD          81.47%       378/464       
+KhaaI           HMBD           8.61%        41/476       
+LamI            HMBD          73.87%      1368/1852      
+MiimI           HMBD          51.92%       243/468       
+NounI           HMBD          61.37%       286/466       
+RaaI            HMBD          28.36%       135/476       
+AiinI           OIHCBD        97.28%       644/662       
+AlifI           OIHCBD       100.00%      1630/1630      
+BaaI            OIHCBD       100.00%       668/668       
+CaafI           OIHCBD        98.80%       659/667       
+DadI            OIHCBD        99.85%       654/655       
+DalI            OIHCBD        99.26%       667/672       
+DhaI            OIHCBD        97.77%       659/674       
+DhelI           OIHCBD        98.78%       650/658       
+FaaI            OIHCBD        99.70%       662/664       
+GhiinI          OIHCBD        99.64%      1116/1120      
+
+================================================================================

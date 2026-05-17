@@ -1,0 +1,51 @@
+# Ignore everything
+*
+
+# Allow directories traversal
+!*/
+
+# Allow Python files
+!*.py
+
+# Allow documentation/config
+!README.md
+!requirements.txt
+!requirements-dev.txt
+!pyproject.toml
+!setup.py
+!setup.cfg
+!LICENSE
+!.gitignore
+
+# Allow notebooks if you want
+!*.ipynb
+
+# Allow useful result images
+!*.png
+!*.jpg
+!*.jpeg
+
+# Ignore bitmap/raw dataset images
+*.bmp
+
+# Ignore model weights/checkpoints
+*.pth
+*.pt
+*.ckpt
+
+# Ignore datasets
+data/
+datasets/
+archive(5)/
+HMBD-v1-master/
+
+# Ignore caches/env
+__pycache__/
+*.pyc
+.env
+venv/
+.venv/
+
+centralized learning/unified_dataset/
+*.bmp
+*.pth
