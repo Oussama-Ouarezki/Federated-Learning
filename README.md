@@ -2,7 +2,7 @@
 
 > A comprehensive study on Arabic handwritten character recognition using CNNs under both centralized and federated learning settings across three benchmark datasets.
 
-📄 **[Read the Full Report (PDF)](https://github.com/Oussama-Ouarezki/Federated-Learning/blob/main/main.pdf)**
+📄 **[Read the Full Report (PDF)](https://github.com/Oussama-Ouarezki/Federated-Learning/raw/main/main.pdf)**
 
 ---
 
